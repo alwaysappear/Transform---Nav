@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.trans {
+    @apply transition-transform ease-linear duration-500;
+}
+
+.show-nav {
+    @apply transform rotate-[-20deg];
+}
+
+.cont.show-nav+nav li {
+    @apply transform translate-x-0 delay-300;
+}
+
+.cont.show-nav .circle {
+    @apply transform rotate-[-70deg];
+}
+
+nav {
+    @apply fixed bottom-[40px] left-0 z-[100];
+}
+
+nav ul {
+    @apply pl-8;
+}
+
+nav ul li {
+    @apply uppercase text-white my-10 mx-0 transform translate-x-[-100%] transition-transform ease-in duration-[0.4s];
+}
+
+nav ul li+li {
+    @apply ml-[15px] transform translate-x-[-150%];
+}
+
+nav ul li+li+li {
+    @apply ml-[30px] transform translate-x-[-200%];
+}
+
+.btn {
+    @apply absolute top-[50%] left-[50%] bg-transparent border-none h-[100px] text-3xl text-white;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn#open {
+    left: 60%;
+}
+
+.btn#close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+p {
+    @apply text-bg-clr-0 leading-loose;
+}
