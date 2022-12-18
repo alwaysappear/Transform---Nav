@@ -10,4 +10,4 @@ $ npm install
 $ npm run watch
 
 
-Go to./public and run index.html as Live Server on VS code.
+Go to ./public and run index.html as Live Server on VS code.
